@@ -9,6 +9,9 @@ function ApartmentDetail({ apartment, onClose }) {
         className="modal-content"
         onClick={(e) => e.stopPropagation()}
       >
+         <button className="close-btn" onClick={onClose}>
+          Close
+        </button>
       </div>
     </div>
   );
