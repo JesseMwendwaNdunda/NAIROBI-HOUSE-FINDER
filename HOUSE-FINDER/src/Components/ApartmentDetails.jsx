@@ -22,6 +22,16 @@ function ApartmentDetail({ apartment, onClose }) {
         <p>
           <strong>Description:</strong> {apartment.description}
         </p>
+
+        <div className="photo-gallery">
+          {apartment.photos.map((photo, index) => (
+            <img
+              key={index}
+              src={photo}
+              alt={`Photo ${index + 1} of ${apartment.name}`}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
