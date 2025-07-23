@@ -12,12 +12,9 @@
         "https://stunning-homes.nairobi-hotels-ke.com/data/Photos/300x300w/13599/1359902/1359902408/nairobi-stunning-homes-photo-20.JPEG",
         "https://stunning-homes.nairobi-hotels-ke.com/data/Photos/300x300w/13617/1361710/1361710811/nairobi-stunning-homes-photo-15.JPEG",
         "https://stunning-homes.nairobi-hotels-ke.com/data/Photos/300x300w/13617/1361709/1361709992/nairobi-stunning-homes-photo-12.JPEG"
-
-        
-
       ],
       "description": "A cozy 3-bedroom apartment with a great view of the city.",
-      "interested": false
+      "interested": true
     },
     {
       "id": 2,
@@ -30,7 +27,7 @@
         "https://tashana-apartments.nairobi-hotels-ke.com/data/Photos/300x300w/14232/1423224/1423224633/nairobi-photo-4.JPEG"
       ],
       "description": "Modern apartments close to shops and public transport.",
-      "interested": false
+      "interested": true
     },
     {
       "id": 3,
@@ -44,12 +41,9 @@
         "https://villacarekenya.com/wp-content/uploads/2021/12/DSC_0327.jpg",
         "https://villacarekenya.com/wp-content/uploads/2021/12/DSC_0323.jpg",
         "https://villacarekenya.com/wp-content/uploads/2021/12/DSC_0271-1.jpg"
-
-
-
       ],
       "description": "Quiet neighborhood, spacious 3-bedroom apartments.Walking distance to Strathmore University",
-      "interested": false
+      "interested": true
     },
     {
       "id": 4,
@@ -115,6 +109,18 @@
       ],
       "description": "Affordable and bright apartments near the highway.",
       "interested": false
+    },
+    {
+      "name": "BELLEVIEW APARTMENT",
+      "location": "Belleview",
+      "price": 60000,
+      "images": "https://i.roamcdn.net/prop/brk/gallery-full-1200w-watermark/7e70e88be00d023e0bf024189466bd89/-/prod-property-core-backend-media-brk/8394735/8d53be02-8e98-45d9-b470-289873dec7d6.jpg",
+      "description": "Beautiful home in the suburbs ",
+      "photos": [
+        "https://i.roamcdn.net/prop/brk/gallery-full-1200w-watermark/7e70e88be00d023e0bf024189466bd89/-/prod-property-core-backend-media-brk/8394735/8d53be02-8e98-45d9-b470-289873dec7d6.jpg"
+      ],
+      "interested": true,
+      "id": 9
     }
   ]
 }
