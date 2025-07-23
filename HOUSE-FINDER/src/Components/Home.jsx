@@ -23,3 +23,16 @@ function Home(){
   );
 }
 
+const styles = {
+  grid: {
+    display: "flex",
+    flexWrap: "wrap",
+    gap: "1rem"
+  }
+};
+
+export default Home;
+
+
+
+
