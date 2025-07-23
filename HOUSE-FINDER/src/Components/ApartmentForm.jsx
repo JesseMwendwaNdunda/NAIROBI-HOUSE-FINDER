@@ -31,14 +31,22 @@ function addApartmentForm(ApartmentForm){
         }
 
     }
+
+    const newApartment={
+        ...formData,
+        photos:[formData.image],
+        interested: false,
+    };
+    addApartment(newApartment);
+    setFormData(emptyForm);
 {
 
 }
 
     return(
-        <form className="add-apartment-form">
+        <form className="add apartment form">
             <h2>Add new Apartment</h2>
-            //form inputs
+            {/* Adds inputs */}
             <input type="text"placeholder="apartment-name" value={formData.name}onChange={handleChange}/>
             <input type="text"placeholder="location"value={formData.location}onChange={handleChange}/>
             <input type="number"placeholder="price"value={formData.price}onChange={handleChange}/>
@@ -48,8 +56,6 @@ function addApartmentForm(ApartmentForm){
           
 
         </form>
-    )
-       
-
-    
+    )  
 }
+export default addApartmentForm;
