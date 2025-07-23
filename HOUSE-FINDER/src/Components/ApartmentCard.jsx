@@ -10,15 +10,20 @@ function ApartmentCard({ apartment, onSelect, toggleInterested }) {
     toggleInterested(apartment.id);
   }
 
+  const image = apartment.photos?.[0] || "https://via.placeholder.com/150";
+  const name = apartment.name || "Unnamed Apartment";
+  const location = apartment.location || "Location not specified";
+  const interested = apartment.interested ? "Interested ✓" : "Interested?";
   return (
     <div
       className="apartment-card"
       onClick={handleCardClick}
       style={{ cursor: "pointer" }}
     >
-      <h3>{apartment.name}</h3>
-      <p>{apartment.location}</p>
-      <button onClick={handleInterestedClick}>Interested?</button>
+     <img src={image} alt={name} className="thumbnail" />
+      <h3>{name}</h3>
+      <p>{location}</p>
+      <button onClick={handleInterestedClick}>{interested}</button>
     </div>
   );
 }
