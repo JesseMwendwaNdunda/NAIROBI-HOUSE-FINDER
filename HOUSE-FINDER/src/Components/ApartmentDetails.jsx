@@ -12,6 +12,16 @@ function ApartmentDetail({ apartment, onClose }) {
          <button className="close-btn" onClick={onClose}>
           Close
         </button>
+
+        <h2>{apartment.name}</h2>
+
+        <p>
+          <strong>Location:</strong> {apartment.location}
+        </p>
+
+        <p>
+          <strong>Description:</strong> {apartment.description}
+        </p>
       </div>
     </div>
   );
