@@ -1,11 +1,11 @@
 import React,{useState} from 'react';
 
-function addApartmentForm(ApartmentForm){
+function AddApartmentForm({addApartment}){
     const emptyForm = {
         name: "",
         location: "",
         price: "",
-        images: "",
+        image: "",
         description: "",
 
         };
@@ -30,7 +30,7 @@ function addApartmentForm(ApartmentForm){
             }
         }
 
-    }
+    
 
     const newApartment={
         ...formData,
@@ -39,26 +39,26 @@ function addApartmentForm(ApartmentForm){
     };
     addApartment(newApartment);
     setFormData(emptyForm);
-{
 
-}
 
+
+    }
     return(
-        <form className="add apartment form">
+        <form className="add apartment form" onSubmit={handleSubmit}>
             <h2>Add new Apartment</h2>
             {/* Adds inputs */}
-            <input type="text"placeholder="apartment-name" value={formData.name}onChange={handleChange}/>
-            <input type="text"placeholder="location"value={formData.location}onChange={handleChange}/>
-            <input type="number"placeholder="price"value={formData.price}onChange={handleChange}/>
-            <input type="url"placeholder="photos"value={formData.images}onChange={handleChange}/>
-            <textarea placeholder="description" value={formData.description}onChange={handleChange}/>
-            <button type="Submit">Add new Apartment</button>            
+            <input type="text"name="name"placeholder="Apartment name" value={formData.name}onChange={handleChange}/>
+            <input type="text"name="location"placeholder="Location"value={formData.location}onChange={handleChange}/>
+            <input type="number"name="price"placeholder="Price"value={formData.price}onChange={handleChange}/>
+            <input type="url"name="image"placeholder="Photos URL"value={formData.image}onChange={handleChange}/>
+            <textarea name="description"placeholder="Description" value={formData.description}onChange={handleChange}/>
+            <button type ="submit">Add new Apartment</button>            
           
 
         </form>
     )  
 }
-export default addApartmentForm;
+export default AddApartmentForm;
 
 
 
