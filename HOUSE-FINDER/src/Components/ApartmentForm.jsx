@@ -1,3 +1,4 @@
+
 import React,{useState} from 'react';
 
 function AddApartmentForm({addApartment}){
@@ -23,42 +24,74 @@ function AddApartmentForm({addApartment}){
     function handleSubmit(e) {
         e.preventDefault()
 
-        for(const key in formData){
-            if(!formData[key]){
-                alert("Please in fill all fields");
-                return;
-            }
-        }
 
-    
+  function handleChange(e) {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: name === "price" ? Number(value) : value,
+    });
+  }
 
-    const newApartment={
-        ...formData,
-        photos:[formData.image],
-        interested: false,
+
+    const newApartment = {
+      ...formData,
+      photos: [formData.images],
+      interested: false,
     };
+
     addApartment(newApartment);
     setFormData(emptyForm);
 
+  }
 
+  return (
+    <form className="add-apartment-form" onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+      <h2>Add New Apartment</h2>
 
-    }
-    return(
-        <form className="add apartment form" onSubmit={handleSubmit}>
-            <h2>Add new Apartment</h2>
-            {/* Adds inputs */}
-            <input type="text"name="name"placeholder="Apartment name" value={formData.name}onChange={handleChange}/>
-            <input type="text"name="location"placeholder="Location"value={formData.location}onChange={handleChange}/>
-            <input type="number"name="price"placeholder="Price"value={formData.price}onChange={handleChange}/>
-            <input type="url"name="image"placeholder="Photos URL"value={formData.image}onChange={handleChange}/>
-            <textarea name="description"placeholder="Description" value={formData.description}onChange={handleChange}/>
-            <button type ="submit">Add new Apartment</button>            
-          
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          value={formData.name}
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          name="location"
+          placeholder="Location"
+          value={formData.location}
+          onChange={handleChange}
+        />
+        <input
+          type="number"
+          name="price"
+          placeholder="Price"
+          value={formData.price}
+          onChange={handleChange}
+        />
+        <input
+          type="url"
+          name="images"
+          placeholder="Image URL"
+          value={formData.images}
+          onChange={handleChange}
+        />
+      </div>
 
-        </form>
-    )  
+      <textarea
+        name="description"
+        placeholder="Description"
+        value={formData.description}
+        onChange={handleChange}
+        rows="3"
+      />
+
+      <button type="submit">Add Apartment</button>
+    </form>
+  );
 }
+
 export default AddApartmentForm;
-
-
 
