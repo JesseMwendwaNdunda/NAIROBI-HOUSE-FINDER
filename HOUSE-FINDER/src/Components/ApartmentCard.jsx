@@ -33,6 +33,8 @@ function ApartmentCard({ apartment, onSelect, toggleInterested }) {
      <img src={image} alt={name} className="thumbnail" />
       <h3>{name}</h3>
       <p>{location}</p>
+      
+  
       <button onClick={handleInterestedClick}>{interested}</button>
     </div>
   );
