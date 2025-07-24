@@ -121,6 +121,7 @@
     {
       "name": "BELLEVIEW APARTMENT",
       "location": "Belleview",
+      "bedrooms": 5,
       "price": 60000,
       "bedrooms": 3,
       "images": "https://i.roamcdn.net/prop/brk/gallery-full-1200w-watermark/7e70e88be00d023e0bf024189466bd89/-/prod-property-core-backend-media-brk/8394735/8d53be02-8e98-45d9-b470-289873dec7d6.jpg",
@@ -132,6 +133,64 @@
       "id": 9
     },
     {
+
+      "id": 10,
+      "name": "LUXURY VILLA",
+      "location":"Kileleshwa",
+      "bedrooms": 4,
+      "price": 48000,
+      "images":["https://i.roamcdn.net/prop/brk/listing-thumb-400w/25eb28d6a7979a0ee6d19baeafeab592/-/prod-property-core-backend-media-brk/8437778/4188db28-1bf6-4c86-86c9-c32c348791c7.jpg",
+      "https://i.roamcdn.net/prop/brk/gallery-main-900w-watermark/ad30f8f9ecb994a5d18094e20ee60d16/-/prod-property-core-backend-media-brk/7615308/d6d784b4-41af-4f83-ba0c-bb255e64666c.jpg"
+      ],
+
+      "description" :"Modern apartments with stunning lake views.",
+      "interested":false
+    },
+    {
+      "id": 11,
+      "name": "Paradise Heights",
+      "location": "Runda,Westlands",
+      "bedrooms": 3,
+      "price": 850000,
+      "images":[
+       "https://dealkenya.com/r/cGljdHVyZXMta2VueWEuamlqaXN0YXRpYy5jb20/76473984_MTYwMC0xMjAwLWRkOTIwYWZhMWE.webp",
+      "https://dealkenya.com/r/cGljdHVyZXMta2VueWEuamlqaXN0YXRpYy5jb20/76473989_MTIwMC0xNjAwLTgwMGFmMTZhYTU.webp",
+      "https://dealkenya.com/r/cGljdHVyZXMta2VueWEuamlqaXN0YXRpYy5jb20/76473988_MTYwMC0xMjAwLWM1MTA4MjIwOGM.webp"
+      ],
+      "description": "Modern Apartments with stunning views",
+      "interested" :true
+       },
+       {
+        "id" :12,
+        "name": "GreatWall Apartments",
+        "location":"Gigiri, Nairobi",
+        "bedrooms":4,
+        "price": 580000,
+        "images":[
+          "https://i.roamcdn.net/prop/brk/listing-thumb-400w/19f048e3014f2ae3c90dce75c19f0d2e/-/prod-property-core-backend-media-brk/8455131/c2f7504b-ca6d-48c4-90b1-398d7a9e90f4.jpeg",
+          "https://i.roamcdn.net/prop/brk/listing-thumb-400w/29394fc8fc73110e9b04ec7165af28c5/-/prod-property-core-backend-media-brk/8455602/c87d120f-6472-4f44-9bb4-bca175881e55.jpg",
+          "https://i.roamcdn.net/prop/brk/listing-thumb-400w/5529eb07c074d72c1806a2b7ccc793b4/-/prod-property-core-backend-media-brk/8455137/b8f457f0-4854-4a67-a69b-4e999503baca.jpeg",
+          "https://i.roamcdn.net/prop/brk/listing-thumb-400w/72a0cea2c926991957c34c0b16b6228c/-/prod-property-core-backend-media-brk/8455193/f7ab4ebd-3cd3-443f-9cd5-4921d3ea70e1.jpg"
+        ]
+       } ,
+       {
+        "id": 13,
+        "name": "Serene Gardens",
+        "location": "Parklands",
+        "bedrooms":4,
+        "price": 450000,
+        "images": [
+          "https://i.roamcdn.net/prop/brk/listing-thumb-400w/68cedcd889240229f3eb05b596d8f9eb/-/prod-property-core-backend-media-brk/8454911/fc1c214c-2052-4f77-b634-5d7979fa579c.jpg",
+          "https://i.roamcdn.net/prop/brk/listing-thumb-400w/ef65bc27a1736eb3c3502513bf3c155e/-/prod-property-core-backend-media-brk/8452952/6ba15b2e-da21-4059-97a6-a6eda5b9dec0.jpg",
+          "https://i.roamcdn.net/prop/brk/listing-thumb-400w/63c4b558698c866b0fa0d20bb126af97/-/prod-property-core-backend-media-brk/8454222/0c042e65-80e8-4061-8fd8-eb286aa82dbe.jpeg",
+          "https://i.roamcdn.net/prop/brk/listing-thumb-400w/0228890e4ce69500af15403008b48b39/-/prod-property-core-backend-media-brk/8455531/e9e22692-0b86-419a-b053-a0949f42d25f.jpg",
+          "https://i.roamcdn.net/prop/brk/listing-thumb-400w/65cfc577f54c2a51de29251c4e84f539/-/prod-property-core-backend-media-brk/8455549/2c50368a-91a4-4030-918e-4df9668dbe8d.jpeg"
+        ],
+        "description": " Apeaceful  and spacious apartment with modern amenities",
+        "interested": true
+
+       }
+=======
       "name": "nun u",
       "location": "kilimani",
       "price": 50000,
@@ -172,5 +231,9 @@
       "interested": false,
       "id": 12
     }
+
   ]
 }
+    
+    
+

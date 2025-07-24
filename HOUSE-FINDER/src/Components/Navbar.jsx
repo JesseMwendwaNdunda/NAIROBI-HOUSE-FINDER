@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -10,7 +11,7 @@ function Navbar({ filters, onFilterChange }) {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/apartments">Apartments</Link></li>
         <li><Link to="/add">Add Apartment</Link></li>
-        <li><Link to="/interested">Interested</Link></li> {/* 👈 NEW */}
+        <li><Link to="/interested">Interested</Link></li> 
       </ul>
 
       <div className="filters">
@@ -55,3 +56,4 @@ function Navbar({ filters, onFilterChange }) {
 }
 
 export default Navbar;
+
