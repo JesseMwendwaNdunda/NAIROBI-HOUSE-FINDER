@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function ApartmentDetail({ apartment, onClose }) {
+function ApartmentDetail({ apartment, onClose }) {
   const [lightboxImg, setLightboxImg] = useState(null);
 
   if (!apartment) return null;
@@ -9,7 +9,7 @@ export default function ApartmentDetail({ apartment, onClose }) {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="close-btn" onClick={onClose}>
-          ✕
+          close
         </button>
 
         <h2>{apartment.name}</h2>
@@ -41,3 +41,5 @@ export default function ApartmentDetail({ apartment, onClose }) {
     </div>
   );
 }
+
+export default ApartmentDetail

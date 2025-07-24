@@ -7,7 +7,6 @@ import ApartmentDetail from "./Components/ApartmentDetails";
 import InterestedPage from "./Components/Interested"; 
 import Navbar from "./Components/Navbar";
 import "./index.css";
-import "./App.css";
 
 function App() {
   const [apartments, setApartments] = useState([]);
