@@ -1,7 +1,7 @@
-/* === Font Import (make sure this is in index.html too!) === */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap');
 
-/* === Reset & Global Styles === */
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
   line-height: 1.6;
 }
 
-/* === Navbar === */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -26,7 +26,7 @@ body {
   
   top: 0;
   z-index: 1000;
-}/* === Navbar === */
+}
 .navbar {
   background-color: #fffef8;
   padding: 0.5rem 2rem;
@@ -35,18 +35,18 @@ body {
   align-items: center;
   box-shadow: 0 4px 10px rgba(160, 101, 47, 0.07);
   font-family: 'Poppins', sans-serif;
-  position: relative; /* no sticky/fixed */
+  position: relative; 
   z-index: 999;
 }
 
-/* === Logo === */
+
 .navbar h1 {
   font-size: 1.2rem;
   color: #a0652f;
   margin: 0;
 }
 
-/* === Nav Links === */
+
 .navbar ul {
   list-style: none;
   display: flex;
@@ -90,7 +90,7 @@ body {
   color: #a0652f;
 }
 
-/* === Hero Section === */
+
 .home-hero {
   background: linear-gradient(to right, rgba(255,255,240,0.6), rgba(255,255,255,0.95)), 
               url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1350&q=80");
@@ -114,7 +114,7 @@ body {
   margin: auto;
 }
 
-/* === Apartment Card === */
+
 .apartment-card {
   border: 1px solid #eee;
   border-radius: 10px;
@@ -147,7 +147,7 @@ body {
   margin-top: 0.8rem;
 }
 
-/* === Button Style === */
+
 button {
   background-color: #a0652f;
   color: #fff;
@@ -163,7 +163,6 @@ button:hover {
   background-color: #7e4f22;
 }
 
-/* === Form Styling === */
 .add-apartment-form input,
 .add-apartment-form textarea,
 .filters input,
@@ -184,7 +183,7 @@ button:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-/* === Detail Modal === */
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -218,7 +217,7 @@ button:hover {
   cursor: pointer;
 }
 
-/* === Photo Gallery === */
+
 .photo-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -234,7 +233,7 @@ button:hover {
   border-radius: 6px;
 }
 
-/* === Lightbox === */
+
 .lightbox {
   position: fixed;
   top: 0;
@@ -254,7 +253,7 @@ button:hover {
   border-radius: 10px;
 }
 
-/* === Animation === */
+
 .apartment-card,
 .navbar,
 .home-hero {
@@ -303,7 +302,7 @@ button:hover {
 }
 
 
-/* === Filter Bar Styling === */
+
 .filters {
   display: flex;
   gap: 1rem;
@@ -318,7 +317,7 @@ button:hover {
   max-width: 1000px;
 }
 
-/* === Input & Select Styling === */
+
 .filters input,
 .filters select {
   padding: 0.75rem 1rem;
