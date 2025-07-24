@@ -15,29 +15,11 @@ function Navbar({ filters, onFilterChange }) {
       </ul>
 
       <div className="filters">
-        <input
-          type="text"
-          name="location"
-          placeholder="Location"
-          value={filters.location}
-          onChange={onFilterChange}
-        />
+        <input type="text" name="location"placeholder="Location"value={filters.location} onChange={onFilterChange} />
 
-        <input
-          type="number"
-          name="minPrice"
-          placeholder="Min Price"
-          value={filters.minPrice}
-          onChange={onFilterChange}
-        />
+        <input type="number"  name="minPrice"  placeholder="Min Price"  value={filters.minPrice} onChange={onFilterChange} />
 
-        <input
-          type="number"
-          name="maxPrice"
-          placeholder="Max Price"
-          value={filters.maxPrice}
-          onChange={onFilterChange}
-        />
+        <input type="number" name="maxPrice" placeholder="Max Price" value={filters.maxPrice} onChange={onFilterChange}/>
 
         <select
           name="bedrooms"

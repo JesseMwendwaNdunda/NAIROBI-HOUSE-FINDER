@@ -8,7 +8,8 @@ import AddApartmentForm from "./ApartmentForm";
 function Home() {
   const [apartments, setApartments] = useState([]);
   const [selectedApartment, setSelectedApartment] = useState(null);
-  const URL = "http://localhost:3000/apartments";
+  const URL = "https://nairobi-house-finder-backend.onrender.com/apartments"
+;
 
   useEffect(() => {
     fetch(URL)

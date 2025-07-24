@@ -18,7 +18,8 @@ function App() {
     bedrooms: "",
   });
 
-  const URL = "http://localhost:3000/apartments";
+  const URL = "https://nairobi-house-finder-backend.onrender.com/apartments"
+;
 
   useEffect(() => {
     fetch(URL)
@@ -108,7 +109,7 @@ function App() {
               path="/interested"
               element={
                 <InterestedPage
-                  apartments={apartments} // ✅ Send full array here
+                  apartments={apartments} 
                   onSelect={(apt) => setSelectedApartment(apt)}
                   toggleInterested={toggleInterested}
                 />
