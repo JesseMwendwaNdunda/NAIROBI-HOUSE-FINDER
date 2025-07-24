@@ -1,15 +1,29 @@
-import React, { useState } from 'react';
 
-function AddApartmentForm({ addApartment }) {
-  const emptyForm = {
-    name: "",
-    location: "",
-    price: "",
-    images: "",
-    description: "",
-  };
+import React,{useState} from 'react';
 
-  const [formData, setFormData] = useState(emptyForm);
+function AddApartmentForm({addApartment}){
+    const emptyForm = {
+        name: "",
+        location: "",
+        price: "",
+        image: "",
+        description: "",
+
+        };
+
+    const [formData, setFormData] =useState(emptyForm);
+    //handles changes
+    function handleChange(e){
+        const{name,value}= e.target;
+
+        setFormData({
+            ...formData,[name]:name ==="price"? Number(value):value
+        });
+    }
+    //handles form submission
+    function handleSubmit(e) {
+        e.preventDefault()
+
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -19,15 +33,6 @@ function AddApartmentForm({ addApartment }) {
     });
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-
-    for (const key in formData) {
-      if (!formData[key]) {
-        alert("Please fill in all fields");
-        return;
-      }
-    }
 
     const newApartment = {
       ...formData,
@@ -37,6 +42,7 @@ function AddApartmentForm({ addApartment }) {
 
     addApartment(newApartment);
     setFormData(emptyForm);
+
   }
 
   return (
@@ -88,3 +94,4 @@ function AddApartmentForm({ addApartment }) {
 }
 
 export default AddApartmentForm;
+
