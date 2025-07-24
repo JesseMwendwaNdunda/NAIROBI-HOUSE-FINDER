@@ -1,32 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 
-// ApartmentDetail shows a popup with full apartment info
 function ApartmentDetail({ apartment, onClose }) {
-// If no apartment is selected, don’t show anything
-    if (!apartment) return null;
+  const [lightboxImg, setLightboxImg] = useState(null);
+
+  if (!apartment) return null;
 
   return (
-    // This is the background overlay that closes the modal when clicked
     <div className="modal-overlay" onClick={onClose}>
-
-   {/* This is the main popup box - clicking inside it won't close the modal */}
-      <div
-        className="modal-content"
-        onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
-      >
-        {/* Close button at the top */}
-         <button className="close-btn" onClick={onClose}>
-          Close
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <button className="close-btn" onClick={onClose}>
+          close
         </button>
 
-        {/* Apartment name as a heading */}
         <h2>{apartment.name}</h2>
-
-        {/* Show location */}
         <p>
           <strong>Location:</strong> {apartment.location}
         </p>
-
         <p>
           <strong>Description:</strong> {apartment.description}
         </p>
@@ -37,12 +26,20 @@ function ApartmentDetail({ apartment, onClose }) {
               key={index}
               src={photo}
               alt={`Photo ${index + 1} of ${apartment.name}`}
+              className="gallery-thumb"
+              onClick={() => setLightboxImg(photo)}
             />
           ))}
         </div>
+
+        {lightboxImg && (
+          <div className="lightbox" onClick={() => setLightboxImg(null)}>
+            <img src={lightboxImg} alt="Full view" />
+          </div>
+        )}
       </div>
     </div>
   );
 }
 
-export default ApartmentDetail;
+export default ApartmentDetail
