@@ -43,7 +43,7 @@ MIT License
 ```bash
 git clone https://github.com/JesseMwendwaNdunda/NAIROBI-HOUSE-FINDER.git
 cd NAIROBI-HOUSE-FINDER
-cd HOUSE-FINDER  # Enter the frontend folder
+cd HOUSE-FINDER  
 npm install
 
 
