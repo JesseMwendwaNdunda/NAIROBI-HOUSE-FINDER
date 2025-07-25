@@ -1,9 +1,8 @@
-# NAIROBI-HOUSE-FINDER
 # Nairobi-House-Finder
 
 #### A beautiful, interactive Nairobi apartment finder built using React for the frontend and JSON Server for the backend.
 
-#### by Jesse Mwendwa,Erskine Nyongesa and Brenda Ngunjiri
+#### by Jesse Mwendwa
 
 ## Description
 
@@ -37,4 +36,19 @@ The live site allows you to:
 ## License
 
 MIT License
+
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/JesseMwendwaNdunda/NAIROBI-HOUSE-FINDER.git
+cd NAIROBI-HOUSE-FINDER
+cd HOUSE-FINDER  # Enter the frontend folder
+npm install
+
+
+
+
+
+
 
